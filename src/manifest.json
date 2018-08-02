@@ -1,7 +1,7 @@
 {
   "name": "Two Dudes In Iowa",
   "version": "1.0",
-  "description": "Replaces Scientists and People with Two Dudes in Iowa for news headlines. Idea from reddit comment:https://old.reddit.com/r/AskReddit/comments/93pen5/what_do_people_take_way_to_seriously/e3ez28x/?utm_content=permalink&utm_medium=front&utm_source=reddit&utm_name=AskReddit",
+  "description": "Replaces Scientists and People with Two Dudes in Iowa for news headlines.",
   "permissions": [
     "storage",
     "declarativeContent",

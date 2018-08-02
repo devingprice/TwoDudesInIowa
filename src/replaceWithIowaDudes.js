@@ -36,7 +36,7 @@ window.onload = function(){
         "Politicians",
         "Witnesses",
 
-        "Trump"//for testing headlines, since he's in all of them
+        // "Trump" Useful for testing headlines, since he's in 75% of them
     ];
     document.querySelectorAll('h1,h2,h3,h4,h5').forEach(function(header){
         let inner = header.innerHTML;
