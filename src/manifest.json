@@ -1,0 +1,49 @@
+{
+  "name": "Two Dudes In Iowa",
+  "version": "1.0",
+  "description": "Replaces Scientists and People with Two Dudes in Iowa for news headlines. Idea from reddit comment:https://old.reddit.com/r/AskReddit/comments/93pen5/what_do_people_take_way_to_seriously/e3ez28x/?utm_content=permalink&utm_medium=front&utm_source=reddit&utm_name=AskReddit",
+  "permissions": [
+    "storage",
+    "declarativeContent",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.cnn.com/*",
+        "*://*.news.google.com/*",
+        "*://*.huffingtonpost.com/*",
+        "*://*.nytimes.com/*",
+        "*://*.foxnews.com/*",
+        "*://*.nbcnews.com/*",
+        "*://*.dailymail.co.uk/*",
+        "*://*.washingtonpost.com/*",
+        "*://*.theguardian.com/*",
+        "*://*.wsj.com/*",
+        "*://*.abcnews.go.com/*",
+        "*://*.bbc.com/*",
+        "*://*.usatoday.com/*",
+        "*://*.latimes.com/*",
+        "*://*.yahoo.com/*"
+      ],
+      "js": ["replaceWithIowaDudes.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/iowa16.png",
+      "32": "images/iowa32.png",
+      "48": "images/iowa48.png",
+      "128": "images/iowa128.png"
+    }
+  },
+  "icons": {
+    "16": "images/iowa16.png",
+    "32": "images/iowa32.png",
+    "48": "images/iowa48.png",
+    "128": "images/iowa128.png"
+  },
+  "manifest_version": 2
+}
